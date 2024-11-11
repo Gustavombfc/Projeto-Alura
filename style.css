@@ -46,6 +46,7 @@ body{
     color: var(--branco);
     font-family: var(--roboto-mono);
     font-size: 40px;
+    width: 70%;
 }
 
 #campo-senha:focus{
@@ -55,4 +56,38 @@ body{
 .conteudo-senha{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+
+.parametro-titulo{
+    font-family: var(--roboto-mono);
+    font-size: 28px;
+}
+
+.parametro-senha___titulo{
+    font-size: 24px;
+    font-family: var(--roboto);
+}
+
+.parametro-coluna___senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (min-widht: 768px) {
+    .parametro-coluna___senha{
+        flex-direction: row;
+    }
 }
